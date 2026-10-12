@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Python
+*.py[oc]
+*.egg-info
+# Tracking
+wandb/
+# Artefactos grandes: de data/ solo se versiona el manifest
+data/*
+!data/manifest.json
+checkpoints/
+models/
+*.safetensors
+!tests/golden/**/*.safetensors
+# Runs con árbol sucio: no reproducibles
+temporary_results/
